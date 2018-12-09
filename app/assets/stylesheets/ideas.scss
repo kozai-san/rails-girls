@@ -1,3 +1,78 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container a:hover {
+  color: #f0fcff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+// .container input[type="submit"] {
+// .square_btn{
+//     position: relative;
+//     display: inline-block;
+//     font-weight: bold;
+//     padding: 12px 0 8px;
+//     text-decoration: none;
+//     color: #67c5ff;
+//     transition: .4s;
+// }
+//
+// .square_btn:before{
+//    position: absolute;
+//    content: '';
+//    width: 100%;
+//    height: 4px;
+//    top:100%;
+//    left: 0;
+//    border-radius: 3px;
+//    background:#67c5ff;
+//    transition: .2s;
+// }
+//
+// .square_btn:after{
+//    position: absolute;
+//    content: '';
+//    width: 100%;
+//    height: 4px;
+//    top:0;
+//    left: 0;
+//    border-radius: 3px;
+//    background:#67c5ff;
+//    transition: .2s;
+// }
+//
+// .square_btn:hover:before {
+//     top: -webkit-calc(100% - 3px);
+//     top: calc(100% - 3px);
+// }
+//
+// .square_btn:hover:after {
+//     top: 3px;
+// }
+// }
+// 飛び出すボタン
+//     display: inline-block;
+//     padding: 0.5em 1em;
+//     text-decoration: none;
+//     background: #f0fcff;/*ボタン色*/
+//     color: #808080;
+//     border-bottom: solid 4px #627295;
+//     border-radius: 3px;
+// }
+// .square_btn:active {/*ボタンを押したとき*/
+//     -ms-transform: translateY(4px);
+//     -webkit-transform: translateY(4px);
+//     transform: translateY(4px);/*下に動く*/
+//     border-bottom: none;/*線を消す*/
+// }
+// デフォルトボタン
+ .container input[type="submit"] {
+   height: 25px;
+   font-size: 13px;
+   font-weight: 500;
+   background-color: #f0fcff;
+   border: none;
+   color: #808080;
+   border-radius: 3px;
+ }
