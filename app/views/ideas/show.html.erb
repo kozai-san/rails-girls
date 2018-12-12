@@ -1,11 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="col-md-9">
+        <div class="col-xs-6 col-lg-4"></div>
+        <div class="col-xs-6 col-lg-4"></div>
+        <div class="col-xs-12 col-lg-4"></div>
+    </div>
+</div>
     <%= image_tag(@idea.picture_url, width: '100%') if @idea.picture.present? %>
   </div>
+  <h3>Comments</h3>
+  <% @comments.each do |comment| %>
+    <div>
+      <strong><%= comment.user_name %></strong>
+      <br />
+      <p><%= comment.body %></p>
+      <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: '削除してもよろしいですか？' } %></p>
+    </div>
+    <% end %>
+    <%= render 'comments/form', comment: @comment %>
 
-  <div class="col-md-3">
+  <div class="col-md-6">
     <p><b>Name: </b><%= @idea.name %></p>
     <p><b>Description: </b><%= @idea.description %></p>
     <p>
